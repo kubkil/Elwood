@@ -4,9 +4,36 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "watch": "npm-run-all -p watch:*",
+    "watch:sass": "node-sass -w --source-map true --output-style compressed scss/ -o build/css/",
+    "autoprefix": "postcss build/css/style.css -u autoprefixer -o build/css/style-prefixed.min.css",
+    "watch:autoprefix": "onchange \"build/css/style.css\" -d 50 -- npm run autoprefix",
+    "watch:ngrok": "ngrok http 5500",
+    "watch:babel": "npx babel js/script.js --watch --out-file build/js/script-compiled.min.js --source-maps inline",
+    "build": "npm-run-all -s build:*",
+    "build:css": "node-sass --source-map true --output-style compressed scss/ -o build/css/",
+    "build:babel": "npx babel js/script.js --out-file build/js/script-compiled.min.js --source-maps inline",
+    "build:autoprefix": "postcss build/css/style.css -u autoprefixer -o build/css/style-prefixed.min.css"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^9.2.0",
+    "babel-cli": "^6.26.0",
+    "babel-minify": "^0.5.0",
+    "babel-preset-env": "^1.7.0",
+    "ngrok": "^3.1.0",
+    "node-sass": "^4.9.4",
+    "npm-run-all": "^4.1.3",
+    "onchange": "^5.0.2",
+    "postcss": "^7.0.5",
+    "postcss-cli": "^6.0.0"
+  },
+  "browserslist": [
+    "> 0.5%",
+    "last 4 versions",
+    "Firefox ESR",
+    "not dead"
+  ]
 }
