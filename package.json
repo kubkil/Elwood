@@ -8,12 +8,12 @@
     "watch:sass": "node-sass -w --source-map true --output-style compressed scss/ -o build/css/",
     "autoprefix": "postcss build/css/style.css -u autoprefixer -o build/css/style-prefixed.min.css",
     "watch:autoprefix": "onchange \"build/css/style.css\" -d 50 -- npm run autoprefix",
-    "watch:ngrok": "ngrok http 5500",
     "watch:babel": "npx babel js/script.js --watch --out-file build/js/script-compiled.min.js --source-maps inline",
     "build": "npm-run-all -s build:*",
     "build:css": "node-sass --source-map true --output-style compressed scss/ -o build/css/",
     "build:babel": "npx babel js/script.js --out-file build/js/script-compiled.min.js --source-maps inline",
-    "build:autoprefix": "postcss build/css/style.css -u autoprefixer -o build/css/style-prefixed.min.css"
+    "build:autoprefix": "postcss build/css/style.css -u autoprefixer -o build/css/style-prefixed.min.css",
+    "ngrok": "ngrok http 5500"
   },
   "keywords": [],
   "author": "",
