@@ -3,7 +3,11 @@
 const hamburger = document.querySelector('.navbar__hamburger');
 const navbarToggle = document.querySelector('.navbar__toggle');
 
-const menuNotExpanded = () => {
+const expandMenu = () => {
+  navbarToggle.checked = true;
+  hamburger.setAttribute('aria-expanded', 'true');
+}
+
   navbarToggle.checked = false;
   hamburger.setAttribute('aria-expanded', 'false');
 };
