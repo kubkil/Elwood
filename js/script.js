@@ -19,7 +19,7 @@ const toggleClass = () => {
   if (hamburger.classList.contains('is-active')) {
     expandMenu();
   } else {
-    menuNotExpanded();
+    hideMenu();
   }
 };
 
