@@ -31,10 +31,7 @@ window.addEventListener('click', (e) => {
   const hamburgerBox = document.querySelector('.hamburger-box');
   const hamburgerInner = document.querySelector('.hamburger-inner');
 
-  switch (true) {
-    case e.target !== hamburger:
-    case e.target !== hamburgerBox:
-    case e.target !== hamburgerInner:
+  if (e.target !== hamburger && e.target !== hamburgerBox && e.target !== hamburgerInner) {
       hamburger.classList.remove('is-active');
     hideMenu();
   }
