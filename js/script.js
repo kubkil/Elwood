@@ -8,6 +8,7 @@ const expandMenu = () => {
   hamburger.setAttribute('aria-expanded', 'true');
 }
 
+const hideMenu = () => {
   navbarToggle.checked = false;
   hamburger.setAttribute('aria-expanded', 'false');
 };
@@ -16,8 +17,7 @@ const toggleClass = () => {
   console.log('boo');
   hamburger.classList.toggle('is-active');
   if (hamburger.classList.contains('is-active')) {
-    navbarToggle.checked = true;
-    hamburger.setAttribute('aria-expanded', 'true');
+    expandMenu();
   } else {
     menuNotExpanded();
   }
@@ -36,9 +36,6 @@ window.addEventListener('click', (e) => {
     case e.target !== hamburgerBox:
     case e.target !== hamburgerInner:
       hamburger.classList.remove('is-active');
-      menuNotExpanded();
-      break;
-    default:
-      console.log('Something went wrong');
+    hideMenu();
   }
 });
