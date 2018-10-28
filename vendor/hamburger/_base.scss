@@ -1,6 +1,6 @@
 // Hamburger
 // ==================================================
-.hamburger {
+.navbar__hamburger--vendor {
   padding: $hamburger-padding-y $hamburger-padding-x;
   display: inline-block;
   cursor: pointer;
@@ -36,22 +36,22 @@
     //   }
     // }
 
-    .hamburger-inner,
-    .hamburger-inner::before,
-    .hamburger-inner::after {
+    .navbar__hamburger-inner,
+    .navbar__hamburger-inner::before,
+    .navbar__hamburger-inner::after {
       background-color: $hamburger-active-layer-color;
     }
   }
 }
 
-.hamburger-box {
+.navbar__hamburger-box {
   width: $hamburger-layer-width;
   height: $hamburger-layer-height * 3 + $hamburger-layer-spacing * 2;
   display: inline-block;
   position: relative;
 }
 
-.hamburger-inner {
+.navbar__hamburger-inner {
   display: block;
   top: 50%;
   margin-top: $hamburger-layer-height / -2;
