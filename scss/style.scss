@@ -17,3 +17,8 @@ a {
   text-decoration: none;
 }
 
+//IMPORT
+@import '../vendor/hamburger/hamburgers.scss';
+@import 'variables';
+@import 'navbar';
+@import 'home';
