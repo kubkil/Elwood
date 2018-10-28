@@ -14,7 +14,6 @@ const hideMenu = () => {
 };
 
 const toggleClass = () => {
-  console.log('boo');
   hamburger.classList.toggle('is-active');
   if (hamburger.classList.contains('is-active')) {
     expandMenu();
@@ -32,7 +31,7 @@ window.addEventListener('click', (e) => {
   const hamburgerInner = document.querySelector('.navbar__hamburger-inner');
 
   if (e.target !== hamburger && e.target !== hamburgerBox && e.target !== hamburgerInner) {
-      hamburger.classList.remove('is-active');
+    hamburger.classList.remove('is-active');
     hideMenu();
   }
 });
