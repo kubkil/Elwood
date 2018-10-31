@@ -2,9 +2,7 @@
 
 const hamburger = document.querySelector('.navbar__hamburger');
 const navbarToggle = document.querySelector('.navbar__toggle');
-// const navbar = document.querySelector('.navbar');
 const homeSection = document.querySelector('.home');
-
 
 const expandMenu = () => {
   navbarToggle.checked = true;
@@ -14,7 +12,6 @@ const expandMenu = () => {
 const hideMenu = () => {
   navbarToggle.checked = false;
   hamburger.setAttribute('aria-expanded', 'false');
-  // navbar.style.background = 'transparent';
 };
 
 const toggleClass = () => {
@@ -40,8 +37,3 @@ window.addEventListener('click', (e) => {
     hideMenu();
   }
 });
-
-// HOME
-// const navbarHeight = navbar.clientHeight;
-
-// homeSection.style.paddingTop = `${navbarHeight}px`;
