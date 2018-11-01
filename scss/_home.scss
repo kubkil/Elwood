@@ -14,4 +14,7 @@
   font-size: 2rem;
 }
 
+.home__blurred-js {
+  filter: blur(4px);
+  transition: filter 100ms ease-in-out;
 }
