@@ -32,6 +32,8 @@
   position: relative;
   opacity: 0;
   color: #fff;
+  transition: opacity 150ms ease-in-out;
+  padding: 0.5rem;
 }
 
 .navbar__toggle {
