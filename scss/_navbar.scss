@@ -1,9 +1,9 @@
 .navbar {
   position: fixed;
   z-index: 999;
-  background: $color-background-nav;
-  padding: 0.75rem 0;
+  padding: 0.45rem 0;
   width: 100vw;
+  background: $background-nav;
 }
 
 .navbar__list {
