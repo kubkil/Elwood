@@ -4,4 +4,7 @@
   height: 100vh;
   display: flex;
   padding: $padding-left-right;
+  filter: blur(0);
+  transition: filter 400ms ease-in-out;
+}
 }
