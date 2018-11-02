@@ -3,7 +3,7 @@
   z-index: 999;
   padding: 3vh 0;
   width: 100vw;
-  background: $background-nav;
+  transition: background 1200ms ease-in-out;
 }
 
 .navbar__logo-link {
