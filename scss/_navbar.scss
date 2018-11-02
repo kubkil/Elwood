@@ -6,6 +6,11 @@
   transition: background 1200ms ease-in-out;
 }
 
+.navbar__background-js {
+  background: #2c2119;
+  transition: background 250ms ease-in-out;
+}
+
 .navbar__logo-link {
   margin-left: 1rem;
 }
@@ -17,7 +22,6 @@
   text-align: center;
   width: 100vw;
   height: 100vh;
-  background: $background-nav;
   transform: scale(1, 0);
   transform-origin: top;
   transition: transform 400ms ease-in-out;
