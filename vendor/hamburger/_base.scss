@@ -18,24 +18,7 @@
   margin: 0;
   overflow: visible;
 
-  // &:hover {
-  //   @if $hamburger-hover-use-filter == true {
-  //     filter: $hamburger-hover-filter;
-  //   } @else {
-  //     opacity: $hamburger-hover-opacity;
-  //   }
-  // }
-
   &.is-active {
-    // &:hover {
-    //   @if $hamburger-hover-use-filter == true {
-    //     filter: $hamburger-active-hover-filter;
-    //   }
-    //   @else {
-    //     opacity: $hamburger-active-hover-opacity;
-    //   }
-    // }
-
     .navbar__hamburger-inner,
     .navbar__hamburger-inner::before,
     .navbar__hamburger-inner::after {
