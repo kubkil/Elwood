@@ -24,7 +24,7 @@
   height: 100vh;
   transform: scale(1, 0);
   transform-origin: top;
-  transition: transform 400ms ease-in-out;
+  transition: transform 400ms ease-in-out, background 400ms ease-in-out;
 }
 
 .navbar__toggle:checked ~ .navbar__list {
