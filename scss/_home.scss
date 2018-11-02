@@ -8,15 +8,15 @@
     url('../../images/home/background1200.jpg') center/cover no-repeat;
   height: 100vh;
   display: flex;
+  align-items: center;
   padding: $padding-left-right;
-  filter: blur(0);
-  transition: filter 400ms ease-in-out;
 }
 
 .home__heading {
   margin-top: 6.5rem;
   color: #fff;
   font-size: 2rem;
+  text-align: center;
 }
 
 .home__blurred-js {
