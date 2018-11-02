@@ -51,7 +51,7 @@
 
 .navbar__toggle:checked ~ .navbar__list .navbar__link {
   opacity: 1;
-  transition: opacity 2250ms ease-in-out 250ms;
+  transition: opacity 250ms ease-in-out 250ms;
 }
 
 .navbar__hamburger {
