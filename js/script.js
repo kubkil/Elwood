@@ -39,4 +39,16 @@ if (window.screen.width < 768) {
       hideMenu();
     }
   });
+
+  window.addEventListener('scroll', () => {
+    const navbar = document.querySelector('.navbar');
+    const elwoodLogo = document.querySelector('.navbar__logo');
+    if (window.pageYOffset > 0) {
+      navbar.classList.add('navbar__scrolled-js');
+      elwoodLogo.classList.add('navbar__logo--scrolled-js');
+    } else {
+      navbar.classList.remove('navbar__scrolled-js');
+      elwoodLogo.classList.remove('navbar__logo--scrolled-js');
+    }
+  });
 }
