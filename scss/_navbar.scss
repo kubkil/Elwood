@@ -11,6 +11,12 @@
   transition: background 250ms ease-in-out;
 }
 
+.navbar__scrolled-js {
+  padding: 1vw 0;
+  background: #2c2119;
+  transition: none;
+}
+
 .navbar__logo-link {
   margin-left: 1rem;
 }
