@@ -1,5 +1,6 @@
 'use strict';
 
+if (window.screen.width < 768) {
 const hamburger = document.querySelector('.navbar__hamburger');
 const navbarToggle = document.querySelector('.navbar__toggle');
 const homeSection = document.querySelector('.home');
@@ -37,3 +38,4 @@ window.addEventListener('click', (e) => {
     hideMenu();
   }
 });
+}
