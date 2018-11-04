@@ -29,7 +29,7 @@ if (window.screen.width < 768) {
 
     hamburger.addEventListener('click', toggleClass);
 
-  window.addEventListener('click', (e) => {
+    const hideMenuOnWindowClick = (e) => {
     const hamburgerBox = document.querySelector('.navbar__hamburger-box');
     const hamburgerInner = document.querySelector('.navbar__hamburger-inner');
 
@@ -37,7 +37,7 @@ if (window.screen.width < 768) {
       hamburger.classList.remove('is-active');
       hideMenu();
     }
-  });
+    };
 
   window.addEventListener('scroll', () => {
     const navbar = document.querySelector('.navbar');
