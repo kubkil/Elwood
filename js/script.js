@@ -27,9 +27,7 @@ if (window.screen.width < 768) {
     }
   };
 
-  hamburger.addEventListener('click', () => {
-    toggleClass();
-  });
+    hamburger.addEventListener('click', toggleClass);
 
   window.addEventListener('click', (e) => {
     const hamburgerBox = document.querySelector('.navbar__hamburger-box');
