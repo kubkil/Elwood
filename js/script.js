@@ -50,6 +50,9 @@ if (window.screen.width < 768) {
       elwoodLogo.classList.remove('navbar__logo--scrolled-js');
     }
     };
+
+    window.addEventListener('click', (e) => {
+      hideMenuOnWindowClick(e);
   });
 }
 }());
