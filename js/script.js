@@ -54,5 +54,7 @@ if (window.screen.width < 768) {
     window.addEventListener('click', (e) => {
       hideMenuOnWindowClick(e);
   });
+
+    window.addEventListener('scroll', makeNavbarSmaller);
 }
 }());
