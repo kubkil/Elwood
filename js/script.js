@@ -39,7 +39,7 @@ if (window.screen.width < 768) {
     }
     };
 
-  window.addEventListener('scroll', () => {
+    const makeNavbarSmaller = () => {
     const navbar = document.querySelector('.navbar');
     const elwoodLogo = document.querySelector('.navbar__logo');
     if (window.pageYOffset > 0) {
@@ -49,6 +49,7 @@ if (window.screen.width < 768) {
       navbar.classList.remove('navbar__scrolled-js');
       elwoodLogo.classList.remove('navbar__logo--scrolled-js');
     }
+    };
   });
 }
 }());
