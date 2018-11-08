@@ -1,3 +1,7 @@
+import Siema from '../../vendor/siema-1.5.1/dist/siema.min.js';
+
+new Siema();
+
 (function handleScrolling() {
   const linkToHome = [document.querySelector('.navbar__link--home'), document.querySelector('.navbar__logo-link')];
   const linkToAbout = document.querySelector('.navbar__link--about');
