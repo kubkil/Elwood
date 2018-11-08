@@ -1,4 +1,26 @@
-'use strict';
+(function handleScrolling() {
+  const linkToHome = [document.querySelector('.navbar__link--home'), document.querySelector('.navbar__logo-link')];
+  const linkToAbout = document.querySelector('.navbar__link--about');
+  const linkToContact = document.querySelector('.navbar__link--contact');
+
+  linkToHome.forEach(link => link.addEventListener('click', (e) => {
+    const homeSection = document.querySelector('.home');
+    e.preventDefault();
+    homeSection.scrollIntoView({ behavior: 'smooth' });
+  }));
+
+  linkToAbout.addEventListener('click', (e) => {
+    const aboutSection = document.querySelector('.about');
+    e.preventDefault();
+    aboutSection.scrollIntoView({ behavior: 'smooth' });
+  });
+
+  linkToContact.addEventListener('click', (e) => {
+    const contactSection = document.querySelector('.contact');
+    e.preventDefault();
+    contactSection.scrollIntoView({ behavior: 'smooth' });
+  });
+}());
 
 (function handleNavbar() {
   if (window.screen.width < 768) {
