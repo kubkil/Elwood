@@ -60,13 +60,13 @@ new Siema();
     const expandMenu = () => {
       navbarToggle.checked = true;
       hamburger.setAttribute('aria-expanded', 'true');
-      [...navbarAndMenu].forEach(elem => elem.classList.add('navbar__background-js'));
+      navbarAndMenu.forEach(elem => elem.classList.add('navbar__background-js'));
     };
 
     const hideMenu = () => {
       navbarToggle.checked = false;
       hamburger.setAttribute('aria-expanded', 'false');
-      [...navbarAndMenu].forEach(elem => elem.classList.remove('navbar__background-js'));
+      navbarAndMenu.forEach(elem => elem.classList.remove('navbar__background-js'));
     };
 
     const toggleClass = () => {
