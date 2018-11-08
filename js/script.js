@@ -71,6 +71,7 @@ new Siema();
 
     const toggleClass = () => {
       hamburger.classList.toggle('is-active');
+
       if (hamburger.classList.contains('is-active')) {
         expandMenu();
       } else {
