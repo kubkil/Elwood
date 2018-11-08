@@ -26,6 +26,31 @@ new Siema();
   });
 }());
 
+(function handleNavbarOnScroll() {
+  if (window.screen.width < 1025) {
+    const makeNavbarSmaller = () => {
+      const elwoodLogo = document.querySelector('.navbar__logo');
+      const navbarLinks = document.querySelectorAll('.navbar__link');
+      const aboutSection = document.querySelector('.about');
+      const navbar = document.querySelector('.navbar');
+      const navbarHeight = navbar.offsetHeight;
+
+      if (window.pageYOffset > 0) {
+        navbar.classList.add('navbar__scrolled-js');
+        elwoodLogo.classList.add('navbar__logo--scrolled-js');
+        navbarLinks.forEach(link => link.classList.add('navbar__link--scrolled-js'));
+        aboutSection.style.paddingTop = `${navbarHeight + 10}px`;
+      } else {
+        navbar.classList.remove('navbar__scrolled-js');
+        elwoodLogo.classList.remove('navbar__logo--scrolled-js');
+        navbarLinks.forEach(link => link.classList.remove('navbar__link--scrolled-js'));
+      }
+    };
+
+    window.addEventListener('scroll', makeNavbarSmaller);
+  }
+}());
+
 (function handleNavbar() {
   if (window.screen.width < 768) {
     const hamburger = document.querySelector('.navbar__hamburger');
