@@ -1,0 +1,46 @@
+// IMPORT
+@import 'variables';
+@import 'mixins';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  &::after,
+  &::before {
+    box-sizing: inherit;
+  }
+}
+
+html {
+  font-family: 'Merriweather', sans-serif;
+  -webkit-tap-highlight-color: transparent;
+  @media screen and (min-width: 20rem) {
+    font-size: calc(1rem + 0.275 * ((100vw - 20rem) / 44.0625));
+  }
+
+  @media screen and (min-width: 64.0625rem) {
+    font-size: 1.275rem;
+  }
+}
+
+body {
+  line-height: 1.2;
+  position: relative;
+  @include respond-to(large) {
+    overflow: hidden;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+//IMPORT
+@import '../vendor/hamburger/hamburgers.scss';
+@import 'navbar';
+@import 'home';
+@import 'about';
+@import 'contact';
+@import 'footer';

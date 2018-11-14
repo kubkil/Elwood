@@ -1,0 +1,38 @@
+.contact {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+
+.contact__heading {
+  text-align: center;
+}
+
+.contact__form {
+  display: grid;
+}
+
+.contact__social {
+  display: none;
+  @include respond-to(large) {
+    display: block;
+  }
+}
+
+.contact__link {
+  display: inline-block;
+}
+
+.contact__icon {
+  font-size: 2rem;
+}
+
+.contact__icon--fb {
+  color: $color-fb;
+}
+
+.contact__icon--insta {
+  background: $color-insta;
+  color: transparent;
+  background-clip: text;
+}

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="#" />
+    <meta name="keywords" content="#" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elwood</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Merriweather:400,700"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <div class="navbar__container">
+      <nav class="navbar" role="navigation">
+        <a href="#" class="navbar__logo-link" onClick="event.preventDefault();">
+          <img
+            src="./img/navbar/Elwood_white.png"
+            alt="Elwood logo"
+            class="navbar__logo"
+          />
+        </a>
+        <button
+          class="navbar__hamburger navbar__hamburger--vendor navbar__hamburger--squeeze"
+          type="button"
+          aria-label="Menu"
+          aria-controls="navbar__list"
+          aria-expanded="false"
+        >
+          <span class="navbar__hamburger-box"
+            >Menu <span class="navbar__hamburger-inner"></span>
+          </span>
+        </button>
+        <input type="checkbox" class="navbar__toggle" id="navbar__toggle" />
+        <ul class="navbar__list" id="navbar__list">
+          <li class="navbar__item navbar__item-1">
+            <a
+              href="#home"
+              class="navbar__link navbar__link--home"
+              onClick="event.preventDefault();"
+              >Home</a
+            >
+          </li>
+          <li class="navbar__item navbar__item-2">
+            <a
+              href="https://www.etsy.com/shop/ElwoodCrafts?ref=l2-shopheader-name"
+              class="navbar__link"
+              >Shop</a
+            >
+          </li>
+          <li class="navbar__item navbar__item-3">
+            <a
+              href="#about"
+              class="navbar__link navbar__link--about"
+              onClick="event.preventDefault();"
+              >About</a
+            >
+          </li>
+          <li class="navbar__item navbar__item-4">
+            <a
+              href="#contact"
+              class="navbar__link navbar__link--contact"
+              onClick="event.preventDefault();"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="siema">
+      <section class="home" id="home">
+        <h1 class="home__heading">
+          Handmade wooden rings from Poland. You can find us on
+          <a
+            href="https://www.etsy.com/shop/ElwoodCrafts?ref=l2-shopheader-name"
+            class="home__shop-link"
+            >Etsy</a
+          >
+        </h1>
+        <i class="home__swipe fas fa-hand-rock" aria-hidden></i>
+      </section>
+      <section class="about" id="about">
+        <div class="about__story">
+          <p class="about__paragraph">
+            In 2016 we launched our first project -
+            <a
+              href="https://www.etsy.com/pl/shop/SPIRITworkshopStore#about"
+              class="about__spirit-link"
+              >Spirit Workshop</a
+            >. Now many experiences richer we are ready for a new one - Elwood.
+          </p>
+          <p class="about__paragraph">
+            Elwood was created to fulfill a desire for crafting, making
+            something beautiful and useful by combining natural materials with
+            unique designs.
+          </p>
+          <p class="about__paragraph">
+            We make rings from all kinds of local and exotic wood (
+            <a
+              class="about__wood-link"
+              href="https://www.wood-database.com/tineo/"
+              >tineo</a
+            >,
+            <a
+              class="about__wood-link"
+              href="https://www.wood-database.com/african-mahogany/"
+              >mahogany</a
+            >,
+            <a
+              class="about__wood-link"
+              href="https://www.wood-database.com/brazilian-rosewood/"
+              >rosewood</a
+            >,
+            <a
+              class="about__wood-link"
+              href="https://www.wood-database.com/black-cherry/"
+              >cherry</a
+            >,
+            <a
+              class="about__wood-link"
+              href="https://www.wood-database.com/hard-maple/"
+              >maple</a
+            >,
+            <a
+              class="about__wood-link"
+              href="https://www.wood-database.com/african-walnut/"
+              >walnut</a
+            >
+            - to name a few) using traditional woodcrafting methods (like wood
+            bending) and all items are handmade in Poland.
+          </p>
+        </div>
+        <div class="about__story">
+          <p class="about__paragraph">
+            Long story short - first the wood is hardened with a special curing
+            agent, next it is shaped and sanded by hand for the right look and
+            size. At the end, we varnish each ring for additional resistance and
+            waterproofness.
+          </p>
+          <p class="about__paragraph">
+            By approaching each ring individually and with unusual care we can
+            offer you rings that you won't find in any shopping center or chain
+            store.
+          </p>
+          <p class="about__paragraph about__paragraph--large">
+            See for yourself
+          </p>
+        </div>
+      </section>
+      <section class="gallery"><img src="" alt="" srcset="" /></section>
+      <section class="contact" id="contact">
+        <h2 class="contact__heading">Get in touch</h2>
+        <form action="" method="POST" class="contact__form">
+          <div>
+            <label for="user-name">Name:</label>
+            <input type="text" name="user-name" id="user-name" />
+          </div>
+          <div>
+            <label for="user-email">Email:</label>
+            <input type="text" name="user-email" id="user-email" />
+          </div>
+          <div>
+            <label for="message">Message:</label>
+            <textarea name="message" id="message"></textarea>
+          </div>
+          <div><button type="submit">Send</button></div>
+        </form>
+        <div class="contact__social">
+          <a
+            aria-label="Go to facebook profile"
+            href="https://www.facebook.com/elwoodcrafts/"
+            class="contact__link contact__link--fb"
+          >
+            <i
+              aria-hidden="true"
+              class="fab fa-facebook contact__icon contact__icon--fb"
+            ></i>
+          </a>
+          <a
+            aria-label="Go to instagram profile"
+            href="https://www.instagram.com/elwood_craft/"
+            class="contact__link contact__link--insta"
+          >
+            <i
+              aria-hidden="true"
+              class="fab fa-instagram contact__icon contact__icon--insta"
+            ></i>
+          </a>
+        </div>
+      </section>
+    </div>
+    <footer class="footer" id="footer">
+      <div class="footer__social">
+        <a
+          aria-label="Go to facebook profile"
+          href="https://www.facebook.com/elwoodcrafts/"
+          class="footer__link footer__link--fb"
+        >
+          <i
+            aria-hidden="true"
+            class="fab fa-facebook contact__icon footer__icon--fb"
+          ></i>
+        </a>
+        <a
+          aria-label="Go to instagram profile"
+          href="https://www.instagram.com/elwood_craft/"
+          class="footer__link footer__link--insta"
+        >
+          <i
+            aria-hidden="true"
+            class="fab fa-instagram footer__icon footer__icon--insta"
+          ></i>
+        </a>
+      </div>
+      <p class="footer__copyright">Copyright &#9400; 2018 Grzegorz Bors</p>
+    </footer>
+  </body>
+</html>
