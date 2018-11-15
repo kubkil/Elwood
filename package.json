@@ -12,9 +12,6 @@
     "build": "webpack --mode production",
     "ngrok": "ngrok http 5500"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.1.5",
     "@babel/preset-env": "^7.1.5",
