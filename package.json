@@ -2,6 +2,9 @@
   "name": "Elwood-package",
   "version": "1.0.0",
   "main": "index.js",
+  "repository": "git@github.com:kubkil/Elwood.git",
+  "author": "Jakub Kilar <kuba.kilar@gmail.com>",
+  "license": "MIT",
   "scripts": {
     "watch": "npm-run-all -p watch:*",
     "watch:sass": "node-sass -w --source-map true --output-style compressed scss/ -o build/css/",
