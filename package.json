@@ -1,7 +1,6 @@
 {
   "name": "Elwood-package",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "watch": "npm-run-all -p watch:*",
