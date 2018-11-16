@@ -1,8 +1,6 @@
 const handleNavbarOnScroll = (() => {
-  const elwoodLogo = document.querySelector('.navbar__logo');
-  const navbarLinks = document.querySelectorAll('.navbar__link');
-  const navbar = document.querySelector('.navbar');
-  const aboutSection = document.querySelector('.about');
+  const navbarContainer = document.querySelector('.navbar__container');
+  let lastScrollPosition = 0;
 
   const makeNavbarSmaller = () => {
     navbar.classList.add('navbar__scrolled-js');
