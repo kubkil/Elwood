@@ -1,0 +1,38 @@
+.about {
+  min-height: 100vh;
+  padding: 2rem;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 600px));
+  grid-column-gap: 8vw;
+  justify-content: center;
+  align-content: center;
+  // &::before {
+  //   content: '';
+  //   position: absolute;
+  //   bottom: 0;
+  //   right: 0;
+  //   border-bottom: 20vw solid #c0a172;
+  //   border-left: 20vw solid transparent;
+  // }
+  // &::after {
+  //   content: '';
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  //   border-top: 15vw solid #453823;
+  //   border-right: 15vw solid transparent;
+  // }
+}
+
+.about__paragraph {
+  color: #000;
+  font-size: 1.2rem;
+  padding-bottom: 1rem;
+}
+
+.about__spirit-link,
+.about__wood-link,
+.about__gallery-link {
+  text-decoration: underline;
+}

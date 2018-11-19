@@ -20,16 +20,13 @@ html {
   }
 
   @media screen and (min-width: 64.0625rem) {
-    font-size: 1.275rem;
+    font-size: 1.375rem;
   }
 }
 
 body {
-  line-height: 1.2;
+  line-height: 1.4;
   position: relative;
-  @include respond-to(large) {
-    overflow: hidden;
-  }
 }
 
 a {

@@ -1,18 +1,18 @@
 .navbar__container {
-  @include respond-to(large) {
-    background: rgba(44, 33, 25, 0.8);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 9999;
-  }
+  background: rgba(44, 33, 25, 0.8);
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
+  transform: translateY(0);
+  transition: transform 100ms ease-in-out;
+}
+
+.navbar__container-js-scrolled {
+  transform: translateY(-200px);
 }
 
 .navbar {
   max-width: 1400px;
-  position: fixed;
-  z-index: 999;
   padding: 1vh 0;
   width: 100%;
   transition: background 1000ms ease-in-out, padding 100ms ease-in-out;
@@ -22,7 +22,6 @@
     justify-content: space-around;
   }
   @include respond-to(large) {
-    position: relative;
     height: 100%;
     transition: none;
     margin: 0 auto;
@@ -41,11 +40,16 @@
   @include respond-to(medium) {
     padding: 0.3rem 0;
   }
+  @include respond-to(large) {
+    background: transparent;
+  }
 }
 
 .navbar__logo-link {
   margin-left: 1rem;
   position: relative;
+  display: flex;
+  align-items: center;
   @include respond-to(medium) {
     margin-right: 1rem;
     flex-basis: 30%;
@@ -86,7 +90,7 @@
   transition: transform 400ms ease-in-out, background 400ms ease-in-out;
   @include respond-to(medium) {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-end;
     position: static;
     transform: scale(1);
     height: auto;
@@ -135,7 +139,7 @@
   transition: opacity 150ms ease-in-out;
   padding: 0.5rem;
   font-weight: 700;
-  font-size: 12vh;
+  font-size: 10vh;
   @include respond-to(medium) {
     display: initial;
     font-size: 2rem;

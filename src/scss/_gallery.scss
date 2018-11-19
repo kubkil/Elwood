@@ -1,0 +1,28 @@
+.gallery {
+  padding: 2rem 0.5rem;
+  cursor: grab;
+  position: relative;
+}
+
+.siema div {
+  display: flex;
+  align-items: center;
+}
+
+.gallery__image-wrapper {
+  max-width: 1200px;
+  max-height: 100%;
+  margin: 0 1rem;
+}
+
+.gallery__image {
+  max-width: 100%;
+  height: auto;
+}
+
+.gallery__slide {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  display: block;
+  text-align: center;
+}
