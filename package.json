@@ -47,5 +47,10 @@
     "last 4 versions",
     "Firefox ESR",
     "not dead"
-  ]
+  ],
+  "dependencies": {
+    "lazysizes": "^4.1.4",
+    "lodash.debounce": "^4.0.8",
+    "siema": "^1.5.1"
+  }
 }
