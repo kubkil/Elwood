@@ -36,7 +36,6 @@
     "postcss-loader": "^3.0.0",
     "prettier": "^1.15.2",
     "sass-loader": "^7.1.0",
-    "siema": "^1.5.1",
     "url-loader": "^1.1.2",
     "webpack": "^4.25.1",
     "webpack-cli": "^3.1.2",
