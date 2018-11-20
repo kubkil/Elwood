@@ -10,7 +10,7 @@ const handleSmoothScrolling = (() => {
   const linkToContact = document.querySelector('.navbar__link--contact');
   const homeSection = document.querySelector('.home');
   const aboutSection = document.querySelector('.about');
-  const contactSection = document.querySelector('.contact');
+  const gallerySection = document.querySelector('.gallery');
 
   const smoothScrollTo = (evt, section) => {
     evt.preventDefault();
@@ -25,6 +25,9 @@ const handleSmoothScrolling = (() => {
       link.addEventListener('click', e => smoothScrollTo(e, homeSection))
     );
     linkToAbout.addEventListener('click', e => smoothScrollTo(e, aboutSection));
+  linkToGallery.addEventListener('click', e =>
+    smoothScrollTo(e, gallerySection)
+  );
     linkToContact.addEventListener('click', e =>
       smoothScrollTo(e, contactSection)
     );
