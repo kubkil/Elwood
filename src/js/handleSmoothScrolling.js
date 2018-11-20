@@ -8,6 +8,7 @@ const handleSmoothScrolling = (() => {
   ];
   const linkToAbout = document.querySelector('.navbar__link--about');
   const linkToContact = document.querySelector('.navbar__link--contact');
+  const linkToGallery = document.querySelector('.about__gallery-link');
   const homeSection = document.querySelector('.home');
   const aboutSection = document.querySelector('.about');
   const gallerySection = document.querySelector('.gallery');
