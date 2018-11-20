@@ -13,6 +13,7 @@ const handleSmoothScrolling = (() => {
   const homeSection = document.querySelector('.home');
   const aboutSection = document.querySelector('.about');
   const gallerySection = document.querySelector('.gallery');
+  const contactSection = document.querySelector('#contact');
 
   const smoothScrollTo = (evt, section) => {
     evt.preventDefault();
