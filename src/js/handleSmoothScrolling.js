@@ -36,26 +36,11 @@ const handleSmoothScrolling = (() => {
     console.log("i'm listening");
   };
 
-  const removeScroll = () => {
-    linkToHome.forEach(link =>
-      link.removeEventListener('click', e => smoothScrollTo(e, homeSection))
-    );
-    linkToAbout.removeEventListener('click', e =>
-      smoothScrollTo(e, aboutSection)
-    );
-    linkToContact.removeEventListener('click', e =>
-      smoothScrollTo(e, contactSection)
-    );
-    console.log("i'm not listening");
-  };
-
-  const media1025 = window.matchMedia('(max-width: 1025px)');
-
-  const scrollMQ = media => {
-    if (media.matches) {
-      scrollOnClick();
+  const arrowDisplay = () => {
+    if (window.scrollY > 200) {
+      arrowLink.classList.add('home__link--js-flex');
     } else {
-      removeScroll();
+      arrowLink.classList.remove('home__link--js-flex');
     }
   };
 
