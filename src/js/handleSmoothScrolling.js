@@ -1,3 +1,5 @@
+import debounce from 'lodash.debounce';
+
 const handleSmoothScrolling = (() => {
   console.log('handleSmoothScrolling');
   const linkToHome = [
@@ -52,9 +54,7 @@ const handleSmoothScrolling = (() => {
     }
   };
 
-  scrollMQ(media1025);
-
-  media1025.addListener(scrollMQ);
+  window.addEventListener('scroll', debounce(arrowDisplay, 250));
 })();
 
 export default handleSmoothScrolling;
