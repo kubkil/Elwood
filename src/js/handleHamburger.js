@@ -1,5 +1,4 @@
 const handleHamburger = (() => {
-  console.log('auto invoked');
   const hamburger = document.querySelector('.navbar__hamburger');
   const navbarToggle = document.querySelector('.navbar__toggle');
   const navbarAndMenu = [
@@ -45,7 +44,6 @@ const handleHamburger = (() => {
   };
 
   const navbarEnabled = () => {
-    console.log('<768');
     hamburger.addEventListener('click', toggleClass);
     window.addEventListener('click', e => {
       hideMenuOnWindowClick(e);
@@ -53,7 +51,6 @@ const handleHamburger = (() => {
   };
 
   const navbarDisabled = () => {
-    console.log('>768');
     hamburger.classList.remove('is-active');
     hideMenu();
     hamburger.removeEventListener('click', toggleClass);
