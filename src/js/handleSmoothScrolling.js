@@ -32,8 +32,6 @@ const handleSmoothScrolling = (() => {
   linkToContact.addEventListener('click', e =>
     smoothScrollTo(e, contactSection)
   );
-    console.log("i'm listening");
-  };
 
   const arrowDisplay = () => {
     if (window.scrollY > 200) {
