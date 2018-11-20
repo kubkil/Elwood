@@ -1,8 +1,4 @@
 #node_modules
 node_modules/
-#build
-build/
 #vscode
-.vscode
-#dist
-/dist
+.vscode/
