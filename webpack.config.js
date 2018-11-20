@@ -24,7 +24,7 @@ module.exports = {
             loader: "html-loader",
             options: {
               minimize: true,
-              attrs: ['img:src', 'source:srcset']
+              attrs: ['img:src', 'source:srcset', 'img:data-src', 'source:data-srcset']
             }
           }
         ]
