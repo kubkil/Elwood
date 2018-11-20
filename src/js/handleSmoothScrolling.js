@@ -29,9 +29,9 @@ const handleSmoothScrolling = (() => {
   linkToGallery.addEventListener('click', e =>
     smoothScrollTo(e, gallerySection)
   );
-    linkToContact.addEventListener('click', e =>
-      smoothScrollTo(e, contactSection)
-    );
+  linkToContact.addEventListener('click', e =>
+    smoothScrollTo(e, contactSection)
+  );
     console.log("i'm listening");
   };
 
