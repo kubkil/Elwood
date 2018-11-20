@@ -22,10 +22,10 @@ const handleSmoothScrolling = (() => {
     });
   };
 
-    linkToHome.forEach(link =>
-      link.addEventListener('click', e => smoothScrollTo(e, homeSection))
-    );
-    linkToAbout.addEventListener('click', e => smoothScrollTo(e, aboutSection));
+  linkToHome.forEach(link =>
+    link.addEventListener('click', e => smoothScrollTo(e, homeSection))
+  );
+  linkToAbout.addEventListener('click', e => smoothScrollTo(e, aboutSection));
   linkToGallery.addEventListener('click', e =>
     smoothScrollTo(e, gallerySection)
   );
