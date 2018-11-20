@@ -1,7 +1,6 @@
 import debounce from 'lodash.debounce';
 
 const handleSmoothScrolling = (() => {
-  console.log('handleSmoothScrolling');
   const linkToHome = [
     document.querySelector('.navbar__link--home'),
     document.querySelector('.navbar__logo-link')
