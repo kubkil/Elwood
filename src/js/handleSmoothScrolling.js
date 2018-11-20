@@ -22,7 +22,6 @@ const handleSmoothScrolling = (() => {
     });
   };
 
-  const scrollOnClick = () => {
     linkToHome.forEach(link =>
       link.addEventListener('click', e => smoothScrollTo(e, homeSection))
     );
