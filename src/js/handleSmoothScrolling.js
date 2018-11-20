@@ -45,6 +45,7 @@ const handleSmoothScrolling = (() => {
   };
 
   window.addEventListener('scroll', debounce(arrowDisplay, 250));
+  arrowLink.addEventListener('click', e => smoothScrollTo(e, homeSection));
 })();
 
 export default handleSmoothScrolling;
