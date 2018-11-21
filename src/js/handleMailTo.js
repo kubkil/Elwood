@@ -18,7 +18,7 @@ const handleMailTo = (() => {
     mailLink.setAttribute('href', `mailto:${mailAddress}`);
   };
 
-  mailLink.addEventListener('click', showMail);
+  mailLink.addEventListener('mousedown', showMail);
 })();
 
 export default handleMailTo;
