@@ -33,18 +33,6 @@
   transition: background 250ms ease-in-out;
 }
 
-.navbar__scrolled-js {
-  padding: 1vw 0;
-  background: #2c2119;
-  transition: none;
-  @include respond-to(medium) {
-    padding: 0.3rem 0;
-  }
-  @include respond-to(large) {
-    background: transparent;
-  }
-}
-
 .navbar__logo-link {
   margin-left: 1rem;
   position: relative;
