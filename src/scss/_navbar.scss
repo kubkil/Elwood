@@ -68,16 +68,6 @@
   }
 }
 
-.navbar__logo--scrolled-js {
-  width: 30%;
-  @media screen and (orientation: landscape) {
-    width: 20%;
-  }
-  @include respond-to(medium) {
-    width: 80%;
-  }
-}
-
 .navbar__list {
   position: absolute;
   top: 100%;
