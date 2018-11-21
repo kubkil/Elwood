@@ -7,9 +7,9 @@ const handleNavbarOnScroll = (() => {
   const checkScrollPosition = () => {
     const newScrollPosition = window.scrollY;
     if (newScrollPosition > lastScrollPosition) {
-      navbarContainer.classList.add('navbar__container-js-scrolled');
+      navbarContainer.classList.add('navbar__container--js-scrolled');
     } else {
-      navbarContainer.classList.remove('navbar__container-js-scrolled');
+      navbarContainer.classList.remove('navbar__container--js-scrolled');
     }
     lastScrollPosition = newScrollPosition;
   };
