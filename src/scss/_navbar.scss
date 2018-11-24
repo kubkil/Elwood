@@ -145,12 +145,6 @@
   }
 }
 
-.navbar__link--scrolled-js {
-  @include respond-to(medium) {
-    font-size: 1.6rem;
-  }
-}
-
 .navbar__toggle {
   display: none;
 }
