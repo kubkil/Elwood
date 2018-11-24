@@ -119,7 +119,7 @@
   font-weight: 700;
   font-size: 10vh;
   @include respond-to(medium) {
-    display: initial;
+    display: inline-block;
     font-size: 1.4rem;
     opacity: 1;
     transition: none;
