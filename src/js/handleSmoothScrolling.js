@@ -1,4 +1,7 @@
 import debounce from 'lodash.debounce';
+import smoothscroll from 'smoothscroll-polyfill';
+
+smoothscroll.polyfill();
 
 const handleSmoothScrolling = (() => {
   const linkToHome = [
