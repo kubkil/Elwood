@@ -1,6 +1,13 @@
 .gallery {
   padding: 2rem 0.5rem;
   position: relative;
+  @include respond-to(x-large) {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 100vw;
+  }
 }
 
 .siema div {
