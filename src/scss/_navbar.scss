@@ -54,6 +54,9 @@
   @include respond-to(medium) {
     width: 100%;
   }
+  @include respond-to(large) {
+    width: 60%;
+  }
 }
 
 .navbar__list {
