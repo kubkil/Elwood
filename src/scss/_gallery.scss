@@ -1,5 +1,6 @@
 .gallery {
   padding: 2rem 0.5rem;
+  padding-top: 0;
   position: relative;
   @include respond-to(x-large) {
     height: 100vh;
