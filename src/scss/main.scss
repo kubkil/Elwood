@@ -16,11 +16,11 @@ html {
   font-family: 'Merriweather', sans-serif;
   -webkit-tap-highlight-color: transparent;
   @media screen and (min-width: 20rem) {
-    font-size: calc(1rem + 0.275 * ((100vw - 20rem) / 44.0625));
+    font-size: calc(1rem + 0.2 * ((100vw - 20rem) / 44.0625));
   }
 
   @media screen and (min-width: 64.0625rem) {
-    font-size: 1.375rem;
+    font-size: 1.3rem;
   }
 }
 
