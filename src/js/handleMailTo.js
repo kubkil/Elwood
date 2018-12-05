@@ -1,5 +1,5 @@
 const handleMailTo = (() => {
-  const mailLink = document.querySelector('.footer__link--gmail');
+  const mailLink = document.querySelector('.contact__link--gmail');
   const decode = mail => {
     const decoded = [];
     for (let i = 0; i < mail.length; i += 1) {
