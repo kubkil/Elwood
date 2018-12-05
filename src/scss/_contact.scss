@@ -1,38 +1,57 @@
-// .contact {
-//   display: grid;
-//   justify-content: center;
-//   align-content: center;
-// }
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 0;
+  padding-top: 2rem;
+  background: #fff;
+  position: relative;
+}
 
-// .contact__heading {
-//   text-align: center;
-// }
+.contact__social {
+  display: flex;
+  margin: 1rem;
+}
 
-// .contact__form {
-//   display: grid;
-// }
+.contact__link {
+  height: 2.6rem;
+  width: 2.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-// .contact__social {
-//   display: none;
-//   @include respond-to(large) {
-//     display: block;
-//   }
-// }
+.contact__link--fb {
+  margin-right: 2rem;
+}
 
-// .contact__link {
-//   display: inline-block;
-// }
+.contact__link--insta {
+  margin-left: 2rem;
+}
 
-// .contact__icon {
-//   font-size: 2rem;
-// }
+.contact__icon {
+  font-size: 2rem;
+}
 
-// .contact__icon--fb {
-//   color: $color-fb;
-// }
+.contact__icon--fb {
+  color: $color-fb;
+}
 
-// .contact__icon--insta {
-//   background: $color-insta;
-//   color: transparent;
-//   background-clip: text;
-// }
+.contact__icon--gmail {
+  color: #c71610;
+}
+
+.contact__icon--insta {
+  background: $color-insta;
+  color: transparent;
+  background-clip: text;
+}
+
+.contact__copyright {
+  text-align: center;
+  padding: 0.5rem 0;
+  font-size: 0.7rem;
+  position: absolute;
+  bottom: 0;
+}
