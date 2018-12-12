@@ -3,3 +3,49 @@
     @content;
   }
 }
+
+// @mixin button-slide-right {
+//   border: none;
+//   transform: rotate(45deg);
+//   transform-origin: center;
+//   position: absolute;
+//   right: 100px;
+//   outline: none;
+//   cursor: pointer;
+//   &::before {
+//     content: '';
+//     position: absolute;
+//     width: 40px;
+//     height: 40px;
+//     border-right: 4px solid;
+//   }
+//   &::after {
+//     content: '';
+//     position: absolute;
+//     width: 40px;
+//     height: 40px;
+//     border-top: 4px solid;
+//   }
+// }
+
+// @mixin button-slide-left {
+//   border: none;
+//   transform: rotate(45deg);
+//   transform-origin: center;
+//   position: absolute;
+//   outline: none;
+//   &::before {
+//     content: '';
+//     position: absolute;
+//     width: 40px;
+//     height: 40px;
+//     border-right: 4px solid;
+//   }
+//   &::after {
+//     content: '';
+//     position: absolute;
+//     width: 40px;
+//     height: 40px;
+//     border-top: 4px solid;
+//   }
+// }
