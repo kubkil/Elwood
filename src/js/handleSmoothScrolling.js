@@ -13,6 +13,11 @@ const handleSmoothScrolling = (() => {
     document.querySelector('.navbar__link--about'),
     document.querySelector('.pagination__button--about')
   ];
+
+  const linkToContact = [
+    document.querySelector('.navbar__link--contact'),
+    document.querySelector('.pagination__button--contact')
+  ];
   const arrowLink = document.querySelector('.home__link');
   const homeSection = document.querySelector('.home');
   const aboutSection = document.querySelector('.about');
