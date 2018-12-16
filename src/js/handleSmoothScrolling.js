@@ -54,8 +54,9 @@ const handleSmoothScrolling = (() => {
   linkToGallery.addEventListener('click', e =>
     smoothScrollTo(e, gallerySection)
   );
-  linkToContact.addEventListener('click', e =>
-    smoothScrollTo(e, contactSection)
+
+  linkToGallery.forEach(link =>
+    link.addEventListener('click', e => smoothScrollTo(e, gallerySection))
   );
 
   const arrowDisplay = () => {
