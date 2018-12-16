@@ -32,6 +32,9 @@ const handleSmoothScrolling = (() => {
   const paginationHomeLink = document.querySelector(
     '.pagination__button--home'
   );
+  const paginationAboutLink = document.querySelector(
+    '.pagination__button--about'
+  );
 
   const smoothScrollTo = (evt, section) => {
     evt.preventDefault();
