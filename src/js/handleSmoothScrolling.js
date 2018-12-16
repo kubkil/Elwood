@@ -29,6 +29,9 @@ const handleSmoothScrolling = (() => {
   const aboutSection = document.querySelector('.about');
   const gallerySection = document.querySelector('.gallery');
   const contactSection = document.querySelector('.contact');
+  const paginationHomeLink = document.querySelector(
+    '.pagination__button--home'
+  );
 
   const smoothScrollTo = (evt, section) => {
     evt.preventDefault();
