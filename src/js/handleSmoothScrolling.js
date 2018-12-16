@@ -6,7 +6,8 @@ smoothscroll.polyfill();
 const handleSmoothScrolling = (() => {
   const linkToHome = [
     document.querySelector('.navbar__link--home'),
-    document.querySelector('.navbar__logo-link')
+    document.querySelector('.navbar__logo-link'),
+    document.querySelector('.pagination__button--home')
   ];
   const linkToAbout = document.querySelector('.navbar__link--about');
   const linkToContact = document.querySelector('.navbar__link--contact');
