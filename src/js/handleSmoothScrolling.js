@@ -48,11 +48,10 @@ const handleSmoothScrolling = (() => {
   };
 
   linkToHome.forEach(link =>
-    link.addEventListener('click', e => smoothScrollTo(e, homeSection))
+      paginationHomeLink.focus();
+      paginationAboutLink.focus();
   );
-  linkToAbout.addEventListener('click', e => smoothScrollTo(e, aboutSection));
-  linkToGallery.addEventListener('click', e =>
-    smoothScrollTo(e, gallerySection)
+      paginationContactLink.focus();
   );
 
   linkToGallery.forEach(link =>
