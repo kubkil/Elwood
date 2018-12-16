@@ -1,0 +1,26 @@
+.pagination {
+  display: none;
+  @include respond-to(x-large) {
+    display: initial;
+    position: absolute;
+    bottom: 1.5rem;
+    left: 50%;
+    transform: translate(-50%);
+  }
+}
+
+.pagination__button {
+  display: none;
+  @include respond-to(x-large) {
+    display: inline-block;
+    width: 1.2rem;
+    height: 1.2rem;
+    border: 2px solid black;
+    border-radius: 50%;
+    margin: 0 0.5rem;
+    outline: none;
+    &:focus {
+      background: #ff0000;
+    }
+  }
+}
