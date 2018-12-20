@@ -67,27 +67,62 @@ const handleSmoothScrolling = (() => {
 
   linkToHome.forEach(link =>
     link.addEventListener('click', e => {
-      paginationHomeLink.focus();
+      if (
+        !paginationHomeLink.classList.contains('pagination__background--js')
+      ) {
+        paginationHomeLink.classList.add('pagination__background--js');
+        const homeSiblings = getAllSiblings(paginationHomeLink);
+        homeSiblings.forEach(btn =>
+          btn.classList.remove('pagination__background--js')
+        );
+      }
       smoothScrollTo(e, homeSection);
     })
   );
 
   linkToAbout.forEach(link =>
     link.addEventListener('click', e => {
-      paginationAboutLink.focus();
+      if (
+        !paginationAboutLink.classList.contains('pagination__background--js')
+      ) {
+        paginationAboutLink.classList.add('pagination__background--js');
+        const aboutSiblings = getAllSiblings(paginationAboutLink);
+        aboutSiblings.forEach(btn =>
+          btn.classList.remove('pagination__background--js')
+        );
+      }
       smoothScrollTo(e, aboutSection);
     })
   );
 
   linkToContact.forEach(link =>
     link.addEventListener('click', e => {
-      paginationContactLink.focus();
+      if (
+        !paginationContactLink.classList.contains('pagination__background--js')
+      ) {
+        paginationContactLink.classList.add('pagination__background--js');
+        const contactSiblings = getAllSiblings(paginationContactLink);
+        contactSiblings.forEach(btn =>
+          btn.classList.remove('pagination__background--js')
+        );
+      }
       smoothScrollTo(e, contactSection);
     })
   );
 
   linkToGallery.forEach(link =>
-    link.addEventListener('click', e => smoothScrollTo(e, gallerySection))
+    link.addEventListener('click', e => {
+      if (
+        !paginationGalleryLink.classList.contains('pagination__background--js')
+      ) {
+        paginationGalleryLink.classList.add('pagination__background--js');
+        const gallerySiblings = getAllSiblings(paginationGalleryLink);
+        gallerySiblings.forEach(btn =>
+          btn.classList.remove('pagination__background--js')
+        );
+      }
+      smoothScrollTo(e, gallerySection);
+    })
   );
 
   const arrowDisplay = () => {
