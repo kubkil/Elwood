@@ -63,8 +63,6 @@ const handleSmoothScrolling = (() => {
     });
   };
 
-  paginationHomeLink.focus();
-
   linkToHome.forEach(link =>
     link.addEventListener('click', e => {
       if (
