@@ -19,8 +19,9 @@
     border-radius: 50%;
     margin: 0 0.5rem;
     outline: none;
-    &:focus {
-      background: #654321;
-    }
   }
+}
+
+.pagination__background--js {
+  background: #654321;
 }
