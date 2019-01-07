@@ -9,6 +9,7 @@ const handleSmoothScrolling = (() => {
     document.querySelector('.navbar__logo-link'),
     document.querySelector('.pagination__button--home')
   ];
+
   const linkToAbout = [
     document.querySelector('.navbar__link--about'),
     document.querySelector('.pagination__button--about')
