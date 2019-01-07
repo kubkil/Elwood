@@ -14,7 +14,10 @@ const handleNavbarOnScroll = (() => {
     lastScrollPosition = newScrollPosition;
   };
   // https://www.yourwebtech.info/tutorial/how-to-detect-vertical-scroll-direction-using-javascript/
-  window.addEventListener('scroll', debounce(checkScrollPosition, 150));
+  window.addEventListener(
+    'scroll',
+    debounce(checkScrollPosition, 150, { leading: true, trailing: true })
+  );
 })();
 
 export default handleNavbarOnScroll;
