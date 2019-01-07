@@ -20,6 +20,7 @@ const handleSmoothScrolling = (() => {
   ];
 
   const linkToGallery = [
+    document.querySelector('.navbar__link--gallery'),
     document.querySelector('.about__gallery-link'),
     document.querySelector('.pagination__button--gallery')
   ];
