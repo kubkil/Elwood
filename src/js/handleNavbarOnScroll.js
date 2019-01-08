@@ -1,6 +1,7 @@
 import debounce from 'lodash.debounce';
 
 const handleNavbarOnScroll = (() => {
+  const navbarToggle = document.querySelector('.navbar__toggle');
   const navbarContainer = document.querySelector('.navbar__container');
   let lastScrollPosition = 0;
 
