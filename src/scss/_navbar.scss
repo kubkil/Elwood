@@ -125,6 +125,9 @@
   padding: 0.5rem;
   font-weight: 700;
   font-size: 2rem;
+  @media screen and (orientation: landscape) and (max-width: 767px) {
+    font-size: 8vh;
+  }
   @include respond-to(medium) {
     display: inline-block;
     font-size: 1.4rem;
