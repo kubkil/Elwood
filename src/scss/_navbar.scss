@@ -103,6 +103,10 @@
   background: #84634c;
 }
 
+.navbar__item-5 {
+  background: #866b58;
+}
+
 .navbar__item {
   @include respond-to(medium) {
     background: transparent;
