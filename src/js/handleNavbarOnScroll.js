@@ -7,7 +7,7 @@ const handleNavbarOnScroll = (() => {
 
   const checkScrollPosition = () => {
     const newScrollPosition = window.scrollY;
-    if (newScrollPosition > lastScrollPosition) {
+    if (newScrollPosition > lastScrollPosition && !navbarToggle.checked) {
       navbarContainer.classList.add('navbar__container--js-scrolled');
     } else {
       navbarContainer.classList.remove('navbar__container--js-scrolled');
