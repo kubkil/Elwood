@@ -49,16 +49,3 @@
   padding: 0.7rem;
 }
 
-.gallery__icon {
-  font-size: 1.2rem;
-  animation: slide 1s infinite;
-}
-
-@keyframes slide {
-  0% {
-    margin-right: 0;
-  }
-  100% {
-    margin-right: 40px;
-  }
-}
