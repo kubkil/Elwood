@@ -77,60 +77,28 @@ const handleSmoothScrolling = (() => {
 
   linkToHome.forEach(link =>
     link.addEventListener('click', e => {
-      if (
-        !paginationHomeLink.classList.contains('pagination__background--js')
-      ) {
-        paginationHomeLink.classList.add('pagination__background--js');
-        const homeSiblings = getAllSiblings(paginationHomeLink);
-        homeSiblings.forEach(btn =>
-          btn.classList.remove('pagination__background--js')
-        );
-      }
+      changePaginationLinkColor(paginationHomeLink);
       smoothScrollTo(e, homeSection);
     })
   );
 
   linkToAbout.forEach(link =>
     link.addEventListener('click', e => {
-      if (
-        !paginationAboutLink.classList.contains('pagination__background--js')
-      ) {
-        paginationAboutLink.classList.add('pagination__background--js');
-        const aboutSiblings = getAllSiblings(paginationAboutLink);
-        aboutSiblings.forEach(btn =>
-          btn.classList.remove('pagination__background--js')
-        );
-      }
+      changePaginationLinkColor(paginationAboutLink);
       smoothScrollTo(e, aboutSection);
     })
   );
 
   linkToContact.forEach(link =>
     link.addEventListener('click', e => {
-      if (
-        !paginationContactLink.classList.contains('pagination__background--js')
-      ) {
-        paginationContactLink.classList.add('pagination__background--js');
-        const contactSiblings = getAllSiblings(paginationContactLink);
-        contactSiblings.forEach(btn =>
-          btn.classList.remove('pagination__background--js')
-        );
-      }
+      changePaginationLinkColor(paginationContactLink);
       smoothScrollTo(e, contactSection);
     })
   );
 
   linkToGallery.forEach(link =>
     link.addEventListener('click', e => {
-      if (
-        !paginationGalleryLink.classList.contains('pagination__background--js')
-      ) {
-        paginationGalleryLink.classList.add('pagination__background--js');
-        const gallerySiblings = getAllSiblings(paginationGalleryLink);
-        gallerySiblings.forEach(btn =>
-          btn.classList.remove('pagination__background--js')
-        );
-      }
+      changePaginationLinkColor(paginationGalleryLink);
       smoothScrollTo(e, gallerySection);
     })
   );
