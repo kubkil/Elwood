@@ -65,6 +65,16 @@ const handleSmoothScrolling = (() => {
     });
   };
 
+  const changePaginationLinkColor = paginationLink => {
+    if (!paginationLink.classList.contains('pagination__background--js')) {
+      paginationLink.classList.add('pagination__background--js');
+      const linkSiblings = getAllSiblings(paginationLink);
+      linkSiblings.forEach(sibling => {
+        sibling.classList.remove('pagination__background--js');
+      });
+    }
+  };
+
   linkToHome.forEach(link =>
     link.addEventListener('click', e => {
       if (
