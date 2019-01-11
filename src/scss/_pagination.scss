@@ -1,7 +1,7 @@
 .pagination {
   display: none;
   @include respond-to(x-large) {
-    display: initial;
+    display: inline-block;
     position: absolute;
     bottom: 1.5rem;
     left: 50%;
