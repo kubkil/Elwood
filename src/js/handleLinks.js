@@ -1,8 +1,8 @@
-const handleLinks = (() => {
-  const links = document.querySelectorAll('a[href^="#"]');
-  links.forEach(link =>
-    link.setAttribute('onClick', 'event.preventDefault();')
-  );
-})();
+// const handleLinks = (() => {
+//   const links = document.querySelectorAll('a[href^="#"]');
+//   links.forEach(link =>
+//     link.setAttribute('onClick', 'event.preventDefault();')
+//   );
+// })();
 
-export default handleLinks;
+// export default handleLinks;
