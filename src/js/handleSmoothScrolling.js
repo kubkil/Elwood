@@ -63,7 +63,6 @@ const handleSmoothScrolling = (() => {
       behavior: 'smooth',
       block: 'start'
     });
-    console.log('slides');
   };
 
   const changePaginationLinkColor = paginationLink => {
