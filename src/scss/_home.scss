@@ -56,3 +56,18 @@
 .home__arrow-up {
   font-size: 2rem;
 }
+
+.home__no-js {
+  position: absolute;
+  left: 50%;
+  top: 15%;
+  transform: translate(-50%);
+  border: 5px solid #fff;
+  padding: 0.5rem;
+}
+
+.home__no-js-message {
+  color: rgb(212, 0, 0);
+  font-size: 1.5rem;
+  font-weight: 700;
+}
