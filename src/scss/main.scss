@@ -46,7 +46,6 @@ a {
 .carousel__slide {
   @include respond-to(x-large) {
     flex: 1 0 100%;
-    // transition: transform 100ms;
   }
 }
 
