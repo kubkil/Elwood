@@ -50,7 +50,6 @@
   "dependencies": {
     "lazysizes": "^4.1.4",
     "lodash.debounce": "^4.0.8",
-    "raf": "^3.4.1",
     "siema": "^1.5.1",
     "smoothscroll-polyfill": "^0.4.3"
   }
